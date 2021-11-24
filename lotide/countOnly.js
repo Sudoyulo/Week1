@@ -9,11 +9,11 @@ const assertEqual = function(actual, expected) {
 const countOnly = function(allItems, itemsToCount) {
   let results = {};
   for (const item of allItems) {
-    if (itemsToCount[item]) { 
-      if (results[item]) {
-        results[item] += 1;
+    if (itemsToCount[item]) { //value of true
+      if (results[item]) { //already exists
+        results[item] += 1; //increase
       } else {
-        results[item] = 1;
+        results[item] = 1; //make
       }
     }
   }
