@@ -21,7 +21,6 @@ for each element in array
 return solution minus comma and period
 */
 
-
 const joinList = function(array) {
   let solution = "";
 
@@ -31,7 +30,6 @@ const joinList = function(array) {
   
   return solution.slice(0,solution.length - 2);
 };
-
 
 // Test / Driver Code below...
 const conceptList = ["gists", "types", "operators", "iteration", "problem solving"];
