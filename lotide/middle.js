@@ -19,11 +19,10 @@ const assertArrayEquals = function(alice,bob) {
 };
 
 const middle = function(malchom) {
-  let inTheMiddle = [];
   let middleIndex = Math.floor(malchom.length / 2);
 
   if (malchom.length < 3) {
-    return inTheMiddle;
+    return [];
   } else if (malchom.length % 2 === 1) { // odd
     return [malchom[middleIndex]];
   } else {
