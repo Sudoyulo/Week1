@@ -18,4 +18,4 @@ const assertArrayEquals = function(alice,bob) {
   }
 };
 
-assertArrayEquals([1,2,3],[1,2,3]);
+assertArrayEquals([1,2,3,"hi"],[1,2,3,"hi"]);
