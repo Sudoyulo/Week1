@@ -16,8 +16,6 @@ const eqObjects = function (object1, object2) {
 
   for (let o1name in object1) {
     for (let o2name in object2) {
-      // console.log(o1name,o2name);
-      // console.log('check',typeof object1[o1name], typeof object2[o2name]);
       if (o1name === o2name && (typeof object1[o1name] === "object" && typeof object2[o2name] === "object")) {
         if (!eqArrays(object1[o1name], object2[o2name])) {
           return false;

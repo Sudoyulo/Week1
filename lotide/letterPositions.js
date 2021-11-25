@@ -10,7 +10,7 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
-const assertArrayEquals = function(alice,bob) {
+const assertArrayEquals = function(alice, bob) {
   if (eqArrays(alice, bob)) {
     console.log("They are equal.");
   } else {
@@ -33,6 +33,8 @@ const letterPositions = function(sentence) {
 
 assertArrayEquals(letterPositions("hello").h, [0]);
 assertArrayEquals(letterPositions("hello").e, [1]);
-assertArrayEquals(letterPositions("hello").l, [2,3]);
+assertArrayEquals(letterPositions("hello").l, [2, 3]);
 assertArrayEquals(letterPositions("hello").o, [4]);
 assertArrayEquals(letterPositions("hello").o, [3]); //fail check
+
+console.log(letterPositions("lighthouse in the house"));
