@@ -5,11 +5,11 @@ const findWaldo = function(names, found) {
       found(i);   // execute callback
     }
   }
-}
+};
 
 const actionWhenFound = function(index) {
   console.log(`Found him at ${index}!`);
-}
+};
 
 findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
 
@@ -24,6 +24,6 @@ const findWaldoFor = function(names, found) {
 
 const actionWhenFoundFor = function(index) {
   console.log(`Found him!`);
-}
+};
 
 findWaldoFor(["Alice", "Bob", "Waldo", "Winston"], actionWhenFoundFor);
