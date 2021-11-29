@@ -37,6 +37,8 @@ const eqObjects = function (object1, object2) {
   return true;
 };
 
+module.exports = eqObjects;
+
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 assertEqual(eqObjects(ab, ba), true); // => true

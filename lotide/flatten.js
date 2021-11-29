@@ -38,4 +38,6 @@ const flatten = function(lumpy) {
   return flat;
 };
 
+module.exports = flatten;
+
 console.log(flatten([1, 2, [3, 4, 4.5], 5, [6]]));

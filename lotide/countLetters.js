@@ -19,6 +19,6 @@ const countLetters = function(countThisString) {
   console.log(letterCount);
   return letterCount;
 };
-
+module.exports = countLetters;
 
 countLetters('Lighthouse Labs');

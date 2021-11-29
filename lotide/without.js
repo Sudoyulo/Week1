@@ -28,6 +28,8 @@ const without = function (bucket,yucky) {
   return yummy;
 };
 
+module.exports = without;
+
 // without([1, 2, 3], [1]);
 // without(["1", "2", "3"], [1, 2, "3"]);
 
